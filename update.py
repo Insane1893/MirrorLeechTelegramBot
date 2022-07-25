@@ -44,7 +44,7 @@ try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
 except:
-    UPSTREAM_REPO = "https://github.com/HuzunluArtemis/MirrorLeechTelegramBot"
+    UPSTREAM_REPO = "https://github.com/Insane1893/MirrorLeechTelegramBot"
 try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
@@ -64,7 +64,7 @@ update = srun([f"git init -q \
                  && git reset --hard origin/{UPSTREAM_BRANCH} -q"], shell=True)
 
 if update.returncode == 0:
-    log_info('Successfully updated with latest commit from UPSTREAM_REPO')
+    log_info('Successfully updated with insane latest commit from UPSTREAM_REPO')
 else:
     log_error('Something went wrong while updating, check UPSTREAM_REPO if valid or not!')
 
